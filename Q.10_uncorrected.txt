@@ -1,0 +1,24 @@
+#include <stdio.h>
+struct complexnum {
+    int A[2];
+    int B[2];
+    int C;
+    int D;
+}ms;
+
+
+int main() {
+    printf("enter the real part of 1st number \n");
+    scanf("%d",&ms.A[0]);
+    printf("enter the real part of 2nd number \n");
+    scanf("%d",&ms.B[0]);
+    printf("enter the imaginary part of 1st number \n");
+    scanf("%d",&ms.A[1]);
+    printf("enter the imaginary part of 2nd number \n");
+    scanf("%d",&ms.B[1]);
+    ms.C=(ms.A[0]*ms.B[0]);
+    ms.D=(ms.A[1]*ms.B[1]);
+    printf("%d + %d",ms.C,ms.D);
+    
+    return 0;
+}
