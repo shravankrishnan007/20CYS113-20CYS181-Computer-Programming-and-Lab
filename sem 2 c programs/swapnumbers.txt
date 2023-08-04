@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+    int num,firstd,digits,lastd,x,y,sw;
+    scanf("%d",&num);
+    digits=log10(num);
+    firstd=num/pow(10,digits);
+    lastd=num%10;
+    x=firstd*(pow(10,digits));
+    y=num%x;
+    num=y/10;
+    sw=lastd*(pow(10,digits))+num*10+firstd;
+    printf("%d",sw);
+    return 0;
+}
